@@ -1,0 +1,32 @@
+/* Optimization: Using variables for easy maintenance */
+:root {
+    --primary: #2d3436;
+    --accent: #0984e3;
+    --bg: #f5f6fa;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+/* Ensure Cross-Browser & Mobile Compatibility */
+@media (max-width: 600px) {
+    .input-section {
+        flex-direction: column;
+    }
+    
+    input, select, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
